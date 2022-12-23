@@ -1,0 +1,9 @@
+CREATE DATABASE CoffeeUsers;
+CREATE TABLE Users (
+    UserID int NOTNULL AUTOINCREMENT, 
+	  PRIMARY KEY (UserID),
+    FirstName varchar(255) NOTNULL,
+    LastName varchar(255) NOTNULL,
+    AccountBalance int DEFAULT 0,
+    FavouriteLocationID int,
+);
